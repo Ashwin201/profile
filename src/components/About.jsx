@@ -1,27 +1,23 @@
 "use client";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
-import mypic from "../../../public/images/me.jpg";
+import mypic from "../../public/images/me.jpg";
 import {
   FacebookIcon,
   GithubIcon,
   InstaIcon,
   LinkedinIcon,
   PhoneIcon,
-} from "../../../public/Icons";
+} from "../../public/Icons";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "./AnimatedText";
 const Info = dynamic(() => import("@/components/Info"));
 const Buttons = dynamic(() => import("@/components/Buttons"));
 
 // const Transition = dynamic(() => import("@/components/Transition"));
-export const metadata = {
-  title: "About Me",
-  description: "This is a nextjs portfolio website with tailwind css.",
-};
 
-const page = () => {
+const AboutMe = () => {
   return (
     <>
       <div className=" mt-[40px] sm:mt[70px]  ">
@@ -37,18 +33,19 @@ const page = () => {
             />
           </div>
           <div className=" xl:w-[65%] mt-10 xl:ml-16 flex flex-col justify-center xl:-mt-3 align-middle text-center xl:text-start">
-            <h3 className="font-bold text-3xl">Front End Developer</h3>
+            <h3 className="font-bold text-[28px]">Full Stack Developer</h3>
             <div className="mt-6 text-black dark:text-white font-medium">
               <p>
-                Hi, I'm Ashmin Sharma, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and responsive
-                design by making pixels magic. After completing high school,
-                I've been actively involved in the Web Development community.
+                Hi, I&apos;m Ashmin Sharma, a web developer and UI/UX designer
+                with a passion for creating beautiful, functional, and
+                responsive design by making pixels magic. After completing high
+                school, I&apos;ve been actively involved in the Web Development
+                community.
               </p>
               <p>
-                Whether I'm working on a website or any other things, i bring my
-                commitment to design excellence and user-centered thinking to
-                every project I work on.
+                Whether I&apos;m working on a website or any other things, i
+                bring my commitment to design excellence and user-centered
+                thinking to every project I work on.
               </p>
               <p>
                 I look forward to the opportunity to bring my skills and passion
@@ -80,7 +77,7 @@ const page = () => {
               >
                 <LinkedinIcon />
               </Link>
-              <Link
+              {/*  <Link
                 href="https://www.facebook.com/profile.php?id=100033350950689"
                 className="mr-3 hidden lg:block"
                 aria-label="Facebook"
@@ -88,7 +85,7 @@ const page = () => {
               >
                 <FacebookIcon />
               </Link>
-              {/* <Link
+              <Link
                 href="tel:8607343110"
                 className="mr-3"
                 aria-label="home"
@@ -108,4 +105,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutMe;

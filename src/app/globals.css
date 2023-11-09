@@ -116,17 +116,7 @@ body {
   filter: blur(1px);
   animation: shadow 0.5s alternate infinite ease;
 }
-.dark .circle {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  left: 15%;
-  transform-origin: 50%;
 
-  animation: circle 0.5s alternate infinite ease;
-}
 .dark .shadow {
   width: 20px;
   height: 4px;

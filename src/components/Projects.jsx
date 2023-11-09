@@ -1,20 +1,16 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import img1 from "../../../public/images/Online-Ecommerce.webp";
-import img2 from "../../../public/images/calculator.webp";
-import img3 from "../../../public/images/tic_tactoe.webp";
-import img4 from "../../../public/images/real-estate.webp";
-import crud from "../../../public/images/crud.webp";
-import blog from "../../../public/images/blog.webp";
-import articles from "../../../public/images/articles.webp";
+import img1 from "../../public/images/Online-Ecommerce.webp";
+import img2 from "../../public/images/calculator.webp";
+import img3 from "../../public/images/tic_tactoe.webp";
+import img4 from "../../public/images/real-estate.webp";
+import crud from "../../public/images/crud.webp";
+import blog from "../../public/images/blog.webp";
+import articles from "../../public/images/articles.webp";
 import Image from "next/image";
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "./AnimatedText";
 import { BsGithub } from "react-icons/bs";
-export const metadata = {
-  title: "Projects",
-  description: "This is a nextjs portfolio website with tailwind css.",
-};
 
 const FeaturedProject = ({ type, image, title, summary, link, github }) => {
   return (
@@ -107,28 +103,40 @@ const FeaturedProjectRight = ({
     </main>
   );
 };
-const projects = () => {
+const Projects = () => {
   return (
     <>
       <div className="mt-[40px] sm:mt[70px]  mb-[120px] sm:px-10  md:px-3 lg:px-0 xl:px-24 2xl:px-[130px]">
         <AnimatedText text="Imagination Trumps Knowledge!" />
 
-        <div className="grid grid-cols-2 gap-12 sm:gap-20 mt-[60px]">
+        <div className="grid grid-cols-2 gap-12 sm:gap-16 mt-[60px]">
           <div className="col-span-2 ">
             <FeaturedProjectRight
               type={"Nextjs"}
               image={articles}
               title={"Articles App"}
               summary={
-                "It's a full stack blog app in which you can see, create, delete and update blogs as well if you are authenticated but if not you can only view others blog. You can also add images from your gallery. This app is created by using Taiwind Css, Next.Js, MongoDB, NextAuth, Prisma and Cloudinary from image upload. "
+                "It's a full stack blog app in which you can create, read, delete and update blogs  if you are authenticated but if not you can only view others blog. You can also add images from your gallery and  can also post multiple links. This app is created by using Taiwind Css, Next.Js, MongoDB, NextAuth, Prisma and Cloudinary for image upload."
               }
               link={"https://bookk.vercel.app/"}
               github={"https://github.com/Ashwin201/.book-app.git"}
             />
           </div>
 
-          <div className="col-span-2 ">
+          <div className="col-span-2">
             <FeaturedProject
+              type={"Nextjs"}
+              image={blog}
+              title={"Blog App"}
+              summary={
+                "A full-stack blog app in which you can create your own post after authenticate through email and google &  users data will be stored in backend but your password  will be in hashed form for user's security purpose."
+              }
+              link={"https://blog-app-seven-weld.vercel.app/"}
+              github={"https://github.com/Ashwin201/Blog-App.git"}
+            />
+          </div>
+          <div className="col-span-2 ">
+            <FeaturedProjectRight
               type={"Nextjs"}
               image={crud}
               title={"CRUD App"}
@@ -137,18 +145,6 @@ const projects = () => {
               }
               link={"https://crud-app-omega-green.vercel.app/"}
               github={"https://github.com/Ashwin201/Crud-App.git"}
-            />
-          </div>
-          <div className="col-span-2">
-            <FeaturedProjectRight
-              type={"Nextjs"}
-              image={blog}
-              title={"Blog App"}
-              summary={
-                "A full-stack blog app in which you can create and delete your own post after authenticate through email and gooogle & the users data will be stored in backend but your password  will be in hashed form for user's security purpose."
-              }
-              link={"https://blog-app-seven-weld.vercel.app/"}
-              github={"https://github.com/Ashwin201/Blog-App.git"}
             />
           </div>
           <div className=" col-span-2 ">
@@ -206,7 +202,7 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
 
 // const SmallProject = ({ type, image, title, summary, link, github }) => {
 //   return (

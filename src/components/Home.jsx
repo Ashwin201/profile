@@ -6,6 +6,12 @@ import dev from "../../public/images/developer-removebg-preview.png";
 import dynamic from "next/dynamic";
 const Buttons = dynamic(() => import("@/components/Buttons"));
 import { motion } from "framer-motion";
+
+const metadata = {
+  title: "My Portfolio",
+  description: "This is a nextjs portfolio website with tailwind css.",
+};
+
 const Home = () => {
   return (
     <>
@@ -15,7 +21,7 @@ const Home = () => {
           alt="main-image"
           loading="eager"
           priority={true}
-          className="  w-full h-auto md:w-[700px] md:h-auto lg:w-[600px] lg:h-[600px] xl:mr-4 "
+          className="  w-full xl:p-6  h-auto md:w-[700px] md:h-auto lg:w-[600px] lg:h-[600px] xl:mr-4 "
         />
 
         <div className="xl:w-1/2   text-center xl:text-start   mt-5 lg:mt-0 ">
@@ -33,8 +39,8 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="font-medium text-base mt-5 md:mt-8 xl:mt-5 text-[16px]">
-              As a front-end developer, I am dedicated to turning ideas into
-              innovative web applications by pixel magic and turning it into
+              As a full stack developer, I am dedicated to turning ideas into
+              innovative web applications and by doing pixel magic creating a
               beautiful responsive website. Explore my latest projects
               showcasing my expertise in Next.js and web development.
             </p>

@@ -39,14 +39,14 @@ const Navbar = () => {
   };
   return (
     <div>
-      <header className=" sticky   top-0 bg-bg font-medium flex justify-between items-center align-middle pb-3">
+      <header className=" sticky   top-0 bg-bg font-medium flex justify-between items-center align-middle mb-3">
         <Link href="/" aria-label="Home">
           <Image src={logo} alt="logo" width={32} height={32} />
         </Link>
-        <nav className=" hidden sm:flex items-center">
+        <nav className=" hidden sm:flex items-center ">
           <Link aria-label="Home" href="/" className="mx-5 relative group">
             Home
-            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.5px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
+            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.6px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
           </Link>
           <Link
             aria-label="About"
@@ -54,7 +54,7 @@ const Navbar = () => {
             className="mr-5 relative group"
           >
             About
-            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.5px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
+            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.6px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
           </Link>
           <Link
             aria-label="Skills"
@@ -62,7 +62,7 @@ const Navbar = () => {
             className="mr-5 relative group"
           >
             Skills
-            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.5px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
+            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.6px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
           </Link>
           <Link
             aria-label="Projects"
@@ -70,7 +70,7 @@ const Navbar = () => {
             className="mr-5 relative group"
           >
             Projects
-            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.5px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
+            <span className="absolute inline-block left-0 -bottom-1 bg-black dark:bg-white h-[1.6px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></span>
           </Link>
         </nav>
 
@@ -109,7 +109,7 @@ const Navbar = () => {
             >
               <LinkedinIcon />
             </Link>
-            <Link
+            {/*<Link
               href="https://www.facebook.com/profile.php?id=100033350950689"
               className="mr-3"
               aria-label="Facebook"
@@ -117,7 +117,7 @@ const Navbar = () => {
             >
               <FacebookIcon />
             </Link>
-            {/* <Link
+             <Link
               href="tel:8607343110"
               target="_blank"
               aria-label="phone"

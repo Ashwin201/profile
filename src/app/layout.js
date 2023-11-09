@@ -6,10 +6,6 @@ import dynamic from "next/dynamic";
 const Navbar = dynamic(() => import("../components/Navbar"));
 const Footer = dynamic(() => import("../components/Footer"));
 import ModeProvider from "@/provider/ModeProvider";
-export const metadata = {
-  title: "My Portfolio",
-  description: "This is a nextjs portfolio website with tailwind css.",
-};
 
 export default function RootLayout({ children }) {
   return (

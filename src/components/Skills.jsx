@@ -13,17 +13,12 @@ import {
   Prisma,
   Reactjs,
   Tailwind,
-} from "../../../public/SkillIcons";
+} from "../../public/SkillIcons";
 import dynamic from "next/dynamic";
-import AnimatedText from "@/components/AnimatedText";
-const Services = dynamic(() => import("@/components/Services"));
+import AnimatedText from "./AnimatedText";
+const Services = dynamic(() => import("./Services"));
 
-export const metadata = {
-  title: "Skills",
-  description: "This is a nextjs portfolio website with tailwind css.",
-};
-
-const page = () => {
+const Skills = () => {
   return (
     <>
       <div className="mt-[40px] sm:mt[70px] mb-[120px]">
@@ -171,4 +166,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Skills;

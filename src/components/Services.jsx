@@ -18,8 +18,8 @@ const Services = async () => {
             Web Designs
           </div>
           <p className="mt-6 text-center font-medium">
-            Websites will work on any resolution devices like Desktop, Tablet's
-            and Mobile's etc.
+            Websites will work on any resolution devices like Desktop,
+            Tablet&apos;s and Mobile&apos;s etc.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center p-8">
