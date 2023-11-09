@@ -10,9 +10,8 @@ const Buttons = async () => {
       >
         <Link
           target="_blank"
-          aria-label="resume"
-          href=""
-          // https://drive.google.com/file/d/1Sx1wgDSLJPffXROh9dyoSjU5s603bCaY/view?usp=sharing
+          aria-label="Resume"
+          href="https://drive.google.com/file/d/1Sx1wgDSLJPffXROh9dyoSjU5s603bCaY/view?usp=sharing"
           className=" flex items-center    py-[6px] px-3 text-lg "
         >
           Resume
@@ -25,7 +24,7 @@ const Buttons = async () => {
         <Link
           href="mailto:sharmaashwin203@gmail.com"
           target="_blank"
-          aria-label="contact"
+          aria-label="Contact"
           className="flex items-center py-[6px]  px-3 text-lg  "
         >
           Contact

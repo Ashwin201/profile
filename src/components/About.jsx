@@ -29,7 +29,9 @@ const AboutMe = () => {
           >
             <Image
               src={mypic}
-              alt="My Picture"
+              alt="My Pic"
+              loading="eager"
+              priority={true}
               className="rounded-lg w-auto h-auto object-cover "
             />
           </div>
