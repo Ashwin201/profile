@@ -4,7 +4,7 @@ const Info = async () => {
   return (
     <>
       <div className=" mb-[150px] sm:px-12 lg:px-20 xl:px-52 ml-4 sm:ml-0">
-        <h1 className="items-center text-center font-bold text-5xl sm:text-6xl lg:text-[80px] mt-[100px] mb-20">
+        <h1 className="items-center text-center font-bold text-5xl sm:text-[55px] lg:text-[65px] mt-24 mb-20">
           Education
         </h1>
         <div className="flex flex-col text-start ">
@@ -41,7 +41,7 @@ const Info = async () => {
         </div>
 
         <div>
-          <h1 className="items-center text-center font-bold text-5xl sm:text-6xl lg:text-[80px] mt-28 mb-20 ">
+          <h1 className="items-center text-center font-bold text-5xl sm:text-[55px] lg:text-[65px] mt-24 mb-20 ">
             Experience
           </h1>
           <div className="flex flex-col text-start ">

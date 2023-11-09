@@ -39,7 +39,7 @@ const Footer = async () => {
           >
             <LinkedinIcon />
           </Link>
-          <Link
+          {/*<Link
             href="https://www.facebook.com/profile.php?id=100033350950689"
             className="mr-3 hidden lg:block"
             aria-label="Facebook"
@@ -47,7 +47,7 @@ const Footer = async () => {
           >
             <FacebookIcon />
           </Link>
-          {/* <Link
+           <Link
             href="tel:8607343110"
             target="_blank"
             aria-label="phone"

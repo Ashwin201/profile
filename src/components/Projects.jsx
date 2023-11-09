@@ -15,7 +15,7 @@ import { BsGithub } from "react-icons/bs";
 const FeaturedProject = ({ type, image, title, summary, link, github }) => {
   return (
     <main
-      className=" flex  flex-col justify-center  md:flex-row  md:justify-between p-4 sm:p-6 border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl 
+      className=" flex  flex-col justify-center  md:flex-row  md:justify-between p-5 sm:p-6 border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl 
     rounded-bl-3xl border-b-[12px]  border-black dark:border-white  rounded-2xl mx-[12px] hover:scale-[.99] ease-in-out duration-500 group cursor-pointer"
     >
       <div className="grid grid-cols-2 gap-0  lg:gap-10">
@@ -24,7 +24,7 @@ const FeaturedProject = ({ type, image, title, summary, link, github }) => {
             src={image}
             alt={title}
             loading="eager"
-            className="w-[100%] h-auto sm:h-[280px] lg:h-full  rounded-2xl "
+            className="w-full h-full rounded-2xl object-cover "
           />
         </div>
         <div className=" col-span-2 lg:col-span-1 flex flex-col justify-center gap-[6px]  ">
@@ -60,7 +60,7 @@ const FeaturedProjectRight = ({
 }) => {
   return (
     <main
-      className=" flex flex-col justify-center  md:flex-row  md:justify-between p-4 sm:p-6 border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl 
+      className=" flex flex-col justify-center  md:flex-row  md:justify-between p-5 sm:p-6 border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl 
     rounded-bl-3xl border-b-[12px]  border-black dark:border-white  rounded-2xl mx-[12px] hover:scale-[.99] ease-in-out duration-500 group cursor-pointer"
     >
       <div className="grid grid-cols-2 gap-0  lg:gap-10">
@@ -69,7 +69,7 @@ const FeaturedProjectRight = ({
             src={image}
             alt={title}
             loading="eager"
-            className="w-[100%] h-auto sm:h-[280px] lg:h-full  rounded-2xl "
+            className="w-full h-full rounded-2xl object-cover"
           />
         </div>
         <div className=" col-span-2 lg:col-span-1 flex flex-col justify-center gap-[6px] ">

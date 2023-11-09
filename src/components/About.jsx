@@ -22,18 +22,19 @@ const AboutMe = () => {
     <>
       <div className=" mt-[40px] sm:mt[70px]  ">
         <AnimatedText text="Passion Fuels Purpose!" />
-        <div className="flex flex-col xl:flex-row items-center my-16  xl:px-20 ">
-          <div className=" h-max w-max z-10 border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl rounded-bl-3xl border-b-[12px]  border-black dark:border-white rounded-2xl p-5 xl:p-6 xl:w-[35%]">
+        <div className=" grid grid-cols-2 my-16 gap-8 lg:gap-14 2xl:gap-3 place-items-center">
+          <div
+            className=" col-span-2 xl:col-span-1 w-fit border-solid border-4 border-r-[12px] rounded-tr-3xl rounded-br-3xl rounded-bl-3xl border-b-[12px]  border-black
+           dark:border-white rounded-2xl p-5 "
+          >
             <Image
               src={mypic}
-              alt="mypic"
-              loading="eager"
-              priority={true}
-              className="rounded-lg w-[240px] h-[370px] lg:w-full sm:h-full "
+              alt="My Picture"
+              className="rounded-lg w-auto h-auto object-cover "
             />
           </div>
-          <div className=" xl:w-[65%] mt-10 xl:ml-16 flex flex-col justify-center xl:-mt-3 align-middle text-center xl:text-start">
-            <h3 className="font-bold text-[28px]">Full Stack Developer</h3>
+          <div className="  col-span-2 xl:col-span-1 flex flex-col justify-center xl:-mt-3 align-start text-center xl:text-start   xl:-ml-16 xl:mr-20 ">
+            <div className="font-bold text-[28px]">Full Stack Developer</div>
             <div className="mt-6 text-black dark:text-white font-medium">
               <p>
                 Hi, I&apos;m Ashmin Sharma, a web developer and UI/UX designer
