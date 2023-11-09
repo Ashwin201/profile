@@ -32,7 +32,7 @@ const AboutMe = () => {
               alt="My Pic"
               loading="eager"
               priority={true}
-              className="rounded-lg w-auto h-auto object-cover "
+              className="rounded-lg w-[100%] h-auto sm:w-[320px] sm:h-[500] object-cover "
             />
           </div>
           <div className="  col-span-2 xl:col-span-1 flex flex-col justify-center xl:-mt-3 align-start text-center xl:text-start   xl:-ml-16 xl:mr-20 ">
